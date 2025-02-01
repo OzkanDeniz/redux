@@ -1,7 +1,7 @@
 import React from "react";
 import "./Counter.css";
 import { useDispatch, useSelector } from "react-redux";
-import { arttir } from "../../redux/actions/counterActions";
+import { arttir, azalt, sifirla } from "../../redux/actions/counterActions";
 
 const Counter = () => {
   //değişkenler useSelector hookuyla çağırılır, fonksiyonlar ise useDispatch ile çağırılır.
