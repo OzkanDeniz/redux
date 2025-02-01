@@ -2,6 +2,7 @@ import React from "react";
 import "./Counter.css";
 import { useDispatch, useSelector } from "react-redux";
 import counterReducer from "../../redux/reducers/counterReducer";
+import { arttir } from "../../redux/actions/counterActions";
 
 const Counter = () => {
   //değişkenler useSelector hookuyla çağırılır, fonksiyonlar ise useDispatch ile çağırılır.
