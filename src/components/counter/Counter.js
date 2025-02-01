@@ -13,7 +13,10 @@ const Counter = () => {
       {/*text*/}
 
       <div>
-        <button className='counter-button positive'>ARTTIR</button>
+        <button className='counter-button positive'
+        
+        
+        >ARTTIR</button>
         <button className='counter-button '>RESET</button>
         <button className='counter-button negative'>AZALT</button>
       </div>
