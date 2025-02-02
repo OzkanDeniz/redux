@@ -1,8 +1,11 @@
 import React from "react";
 import okLogo from "../../assets/ok.png";
 import deleteLogo from "../../assets/delete.png";
+import { useDispatch } from "react-redux";
+import { sil } from "../../redux/actions/todoActions";
 
 const TodoItem = ({ gorev }) => {
+  const dispatchh = useDispatch()
   return (
     <div
       style={{
@@ -17,7 +20,7 @@ const TodoItem = ({ gorev }) => {
           <img src={okLogo} className="ok-logo" alt="ok logo" />
         </span>
         <span>
-          <img src={deleteLogo} className="delete-logo" alt="delete logo" onClick={()=>sil(gorev.id)}/>
+          <img src={deleteLogo} className="delete-logo" alt="delete logo" onClick={()=>dispatchh(sil(gorev.id))}/>
         </span>
       </div>
     </div>
