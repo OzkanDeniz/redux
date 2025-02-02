@@ -1,6 +1,5 @@
 //!mutfak
 
-
 const initial = {
   gorevler: [
     { id: 0, yazi: "Redux Çalışıyoruz", completed: false },
@@ -9,13 +8,13 @@ const initial = {
 };
 
 const todoReducer = (state = initial, { type, payload }) => {
-switch (type) {
+  switch (type) {
     case "DELETE":
-    return {gorevler:state.gorevler.filter((a)=>a.id)}
+      return { gorevler: state.gorevler.filter((a) => a.id !== payload) };
 
-    default: return state
-        
-}
+    default:
+      return state;
+  }
 };
 
 export default todoReducer;
