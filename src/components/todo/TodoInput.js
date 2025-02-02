@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 
 const TodoInput = () => {
   const [todo, setTodo] = useState("");
+  const dispatch = useDispatch()
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    ekle(todo)
+    dispatch(ekle(todo))
   };
   return (
     <form onSubmit={handleSubmit}>
