@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
+import { ekle } from "../../redux/actions/todoActions";
 
 const TodoInput = () => {
   const [todo, setTodo] = useState("");
