@@ -4,6 +4,8 @@ const TodoInput = () => {
   const [todo, setTodo] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    ekle(todo)
   };
   return (
     <form onSubmit={handleSubmit}>
