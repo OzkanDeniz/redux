@@ -10,7 +10,9 @@ const initial = {
 
 const todoReducer = (state = initial, { type, payload }) => {
 switch (type) {
-    
+    case "DELETE":
+    return {gorevler:state.gorevler.filter((a)=>a.id)}
+
     default: return state
         
 }
