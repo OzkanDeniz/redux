@@ -12,6 +12,8 @@ const todoReducer = (state = initial, { type, payload }) => {
     case "DELETE":
       return { gorevler: state.gorevler.filter((a) => a.id !== payload) };
 
+    case "ADD":
+      return { gorevler: [{ id: 3, yazi: payload, completed: false }] };
     default:
       return state;
   }
